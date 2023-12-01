@@ -1,7 +1,8 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { SCREEN_STACK } from '@/constants';
-import { AuthenticationStack, ParentStack } from './stack';
+import { AuthenticationStack } from './stack';
+import ParentStack from './stack/ParentStack';
 
 const MainStack = createNativeStackNavigator();
 

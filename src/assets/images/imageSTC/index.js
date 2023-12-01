@@ -1,0 +1,9 @@
+export { default as IMG_STCLop6 } from './STCLop6.png';
+export { default as IMG_STCLop7 } from './STCLop7.png';
+export { default as IMG_STCLop8_Sang } from './STCLop8Sang.png';
+export { default as IMG_STCLop8_Toi } from './STCLop8Toi.png';
+export { default as IMG_STCLop9_Chieu } from './STCLop9Chieu.png';
+export { default as IMG_STCLop9_Toi } from './STCLop9Toi.png';
+export { default as IMG_STCLop10 } from './STCLop10.png';
+export { default as IMG_STCLop11 } from './STCLop11.png';
+export { default as IMG_STCLop12 } from './STCLop12.png';

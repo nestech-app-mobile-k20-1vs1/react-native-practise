@@ -1,0 +1,7 @@
+export {default as THTLop6} from './THTLop6.png'
+export {default as THTLop7} from './THTLop7.png'
+export {default as THTLop8} from './THTLop8.png'
+export {default as THTLop9} from './THTLop9.png'
+export {default as THTLop10} from './THTLop10.png'
+export {default as THTLop11} from './THTLop11.png'
+export {default as THTLop12} from './THTLop12.png'

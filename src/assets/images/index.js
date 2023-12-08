@@ -1,0 +1,7 @@
+export * from './imageSTC'
+export * from './imageTHT'
+export * from './logo'
+export * from './imageHomeParent'
+export * from './imageGiaoVien'
+export * from './imageBanner'
+export * from './imageHomeTutor'

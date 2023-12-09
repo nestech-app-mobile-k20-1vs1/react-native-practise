@@ -28,8 +28,7 @@ export default Header;
 
 const styles = StyleSheet.create({
   container: {
-    paddingVertical: scale(24),
-    paddingHorizontal: scale(16),
+    padding: scale(16),
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center'

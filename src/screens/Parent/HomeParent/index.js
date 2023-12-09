@@ -11,7 +11,7 @@ import {
   IMG_Banner4,
   IMG_Banner5
 } from '@/assets';
-import { COLORS, CONTENT_SCREENS, SCREEN_NAMES, SCREEN_STACK, SCREEN_WIDTH } from '@/constants';
+import { COLORS, SCREEN_NAMES, SCREEN_WIDTH } from '@/constants';
 import {
   Image,
   View,
@@ -24,6 +24,8 @@ import {
 import { SliderBox } from 'react-native-image-slider-box';
 import { Header } from '@/components';
 import { scale, width } from 'react-native-utils-scale';
+import ItemTeacher from './components/ItemTeacher';
+
 const listImage = [IMG_Banner1, IMG_Banner2, IMG_Banner3, IMG_Banner4, IMG_Banner5];
 
 const HomeParent = ({ navigation }) => {
@@ -93,10 +95,13 @@ const HomeParent = ({ navigation }) => {
           horizontal
           endFillColor={COLORS.BLUE}
           showsHorizontalScrollIndicator={false}
-          pagingEnabled>
-          <Image style={styles.imageGiaoVien} source={IMG_ThayPhap} />
-          <Image style={styles.imageGiaoVien} source={IMG_ThayCong} />
-          <Image style={styles.imageGiaoVien} source={IMG_ThayPhap} />
+          pagingEnabled
+          snapToInterval={SCREEN_WIDTH}
+          decelerationRate={'fast'}
+          alwaysBounceHorizontal={true}>
+          <ItemTeacher source={IMG_ThayPhap} />
+          <ItemTeacher source={IMG_ThayCong} />
+          <ItemTeacher source={IMG_ThayPhap} />
         </ScrollView>
       </ScrollView>
     </SafeAreaView>

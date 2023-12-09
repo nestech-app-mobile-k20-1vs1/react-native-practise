@@ -19,5 +19,8 @@ export const CONTENT_SCREENS = {
     PHONE_NUMBER: 'Số điện thoại',
     EMAIL: 'Email',
     PASSWORD: 'Mật khẩu'
+  },
+  HOME_PARENT: {
+    PERFECT_TEACHER: 'GIÁO VIÊN TIÊU BIỂU'
   }
 };

@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     width: SCREEN_WIDTH
   },
   item: {
-    width: SCREEN_WIDTH - 16,
+    width: SCREEN_WIDTH - scale(32),
     height: scale(250),
     resizeMode: 'contain'
   }

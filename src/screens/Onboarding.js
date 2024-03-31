@@ -7,14 +7,16 @@ import {
   StyleSheet,
   Dimensions,
 } from 'react-native';
-import {COLORS} from '../constants/colors';
+import {COLORS} from '../constants/color.js';
 
-const {width, height} = Dimensions.get('window');
+const {width, height} = Dimensions.get('screen');
 
 const Onboarding = () => {
   return (
-    <View style={styles.Container}>
-      <Image source={require('../assets/images/Img_Onboarding1.png')} />
+    <View style={styles.container}>
+      <View style={styles.view1}>
+        <Image source={require('../assets/images/Img_Onboarding1.png')} />
+      </View>
       <View style={styles.view2}>
         <Text style={styles.text1}>Pay bills at the most appropriate time</Text>
         <Text style={styles.text2}>
@@ -25,44 +27,37 @@ const Onboarding = () => {
         </Text>
       </View>
       <View style={styles.view3}>
-        <TouchableOpacity onPress={() => {}} style={styles.buttonCreateAccount}>
-          <Text style={styles.titleButtonCreateAccount}>Create an account</Text>
+        <TouchableOpacity onPress={() => {}} style={styles.touch1}>
+          <Text style={styles.texttouch1}>Create an account</Text>
         </TouchableOpacity>
       </View>
       <View style={styles.view4}>
         <Text style={styles.text3}>Already a registered user?</Text>
         <TouchableOpacity onPress={() => {}}>
-          <Text style={styles.text4}>Log In</Text>
+          <Text style={styles.texttouch2}>Log In</Text>
         </TouchableOpacity>
       </View>
     </View>
   );
 };
 const styles = StyleSheet.create({
-  Container: {flex: 1, justifyContent: 'center', alignItems: 'center'},
-  view2: {marginHorizontal: 16, marginTop: 40},
-  view3: {marginTop: 40},
-  view4: {
-    marginTop: 24,
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 44,
-  },
-  text1: {fontSize: 32, color: COLORS.TITLE},
-  text2: {fontSize: 16, color: COLORS.CONTENT, marginTop: 10},
-  text3: {fontSize: 16, color: COLORS.CONTENT_700},
-  text4: {fontSize: 16, color: COLORS.MIDNIGHT_OCEAN},
-  buttonCreateAccount: {
-    backgroundColor: COLORS.TITLE,
-    paddingVertical: 22,
-    width: width - 32,
+  container: {flex: 1, justifyContent: 'center', alignItems: 'center'},
+  view1: {flex: 1},
+  view2: {marginHorizontal: 16, marginTop: 88},
+  view3: {justifyContent: 'center', marginTop: 40},
+  view4: {flexDirection: 'row', marginTop: 24, marginBottom: 16},
+  text1: {fontSize: 32, color: COLORS.TEXT1},
+  text2: {fontSize: 16, color: COLORS.TEXT2, marginTop: 16},
+  text3: {fontSize: 16, color: COLORS.TEXT3},
+  touch1: {
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: COLORS.BACKGROUNDTOUCHABLE,
+    paddingVertical: 22,
+    width: width - 32,
     borderRadius: 8,
   },
-  titleButtonCreateAccount: {
-    color: COLORS.WHITE,
-  },
+  texttouch1: {color: COLORS.TEXTTOUCHABLE1},
+  texttouch2: {color: COLORS.TEXTTOUCHABLE2, marginLeft: 10},
 });
-
 export default Onboarding;
